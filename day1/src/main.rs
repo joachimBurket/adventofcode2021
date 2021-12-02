@@ -28,9 +28,9 @@ fn count_increased_values(values: &Vec<u32>) -> u32 {
 
 
 fn main() {
-    const MEASURES_FILENAME: &str = "resources/measures";
+    const INPUT_FILENAME: &str = "resources/measures";
 
-    let content = fs::read_to_string(MEASURES_FILENAME).unwrap();
+    let content = fs::read_to_string(INPUT_FILENAME).unwrap();
     
     // Part 1
     let measures: Vec<u32> = content.lines().map(|x| x.parse::<u32>().unwrap()).collect();
