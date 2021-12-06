@@ -79,7 +79,7 @@ fn play_bingo2(boards: &mut Vec<BingoBoard>, numbers: &Vec<u32>) -> (Option<u32>
     for number in numbers {
         println!("***** NUMBER {} !! *****", number);
 
-        for (i, board) in boards.iter_mut().enumerate() {
+        for board in boards.iter_mut() {
             if board.has_won {
                 continue;
             }
